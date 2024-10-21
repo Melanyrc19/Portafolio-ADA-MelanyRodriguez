@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.contenedor-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    font-size: 30px;
+    box-shadow: 1px 3px 5px rgb(243, 221, 240);
+}
+.contenido{
+    width: 40%;
+    height: 100px;
+    font-size: 60px;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 50px;
+    align-items: center;
+    background-color:  rgba(188, 209, 239, 0.789);
+    font-weight: 100;
+}
+nav{
+    background-color: rgba(188, 209, 239, 0.789);
+    width: 60%;
+    height: 100px;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contenido-nav a{
+    color: rgb(8, 16, 72);
+    font-weight: 700;
+}
+.contenedor-nav a{
+    text-decoration: none;
+}
+.mihero{
+    width: 100%;
+    height: 500px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.mihero-left{
+    width: 60%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(224, 224, 227);
+    margin: 0;
+    padding: 0;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    
+}
+
+#button-hero{
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    background-color: rgb(163, 193, 219);
+    border-radius: 15px;
+    box-shadow: 2px 3px 5px rgb(127, 154, 203);
+    border-color: rgb(235, 234, 240);
+}
+.mihero-left #presentacion{
+    width: 500px;
+    font-size: 25px;
+}
+.grilla-imagen{
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40%;
+    height: 500px;
+    border: 2px solid black;
+}
+#imagen-hero{
+    width: 843px;
+    height: 500px;
+}
+.contenedor-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 1000px;
+    border: 1px solid black;
+    font-size: 25px;
+    text-align: center;
+}
+#misconocimientos-main{
+    text-align: center;
+    width: 900px;
+    margin-bottom: 25px;
+}
+.contenedor-misconocimientos-cards{
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 25px;
+}
+.misconocimientos-cards{
+    width: 25%;
+    height: 270px;
+    border: 3px solid black;
+    box-shadow: 3px 3px 3px rgb(92, 94, 96);
+    background-color: rgb(209, 209, 226);
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (width:320px){
+    
+}
