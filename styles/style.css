@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -18,7 +19,7 @@ nav {
     width: 100%;
     font-size: 10px;
     font-weight: 700;
-    background-color: rgba(13, 36, 69, 0.789);
+    background-color: rgba(111, 205, 147, 0.789);
 }
 
 nav a {
@@ -27,7 +28,7 @@ nav a {
 }
 
 .mihero {
-    height: 380px;
+    height: 660px;
 }
 
 .contenedor-mihero {
@@ -55,14 +56,14 @@ nav a {
 
 .contenedor-sobremi {
     margin: 0;
-    background-color: rgb(200, 208, 208);
+    background-color: rgba(255, 255, 255, 0.211);
     text-align: justify;
-    padding: 5px;
-    height: 250px;
+    height: 290px;
 }
 
 .contenedor-sobremi h4 {
-    padding: 10px;
+    margin: 0;
+    padding-top: 10px;
     /* padding-left: 9px; */
     text-align: center;
 }
@@ -78,21 +79,22 @@ nav a {
 
 #button {
     text-align: center;
-
 }
 
 main {
     width: 100%;
-
+    display: flex;
+    flex-direction: column;
 }
 
 .contenedor-conocimientos {
     background-color: rgb(255, 255, 255);
     color: rgb(246, 238, 238);
     text-align: center;
+    box-sizing: border-box;
     margin: 0;
     padding: 5px;
-    background-color: rgb(16, 34, 49);
+    background-color:rgb(120, 213, 216);
 }
 
 .contenedor-cards {
@@ -114,28 +116,35 @@ main {
     width: 26%;
     height: 120px;
     margin: 7px;
-    background: rgb(136, 255, 252);
+    background-color: white;
 }
 
 .contenedor-misproyectos {
     text-align: center;
-    background-image: linear-gradient(to bottom, #051237, #1b2b51, #32456c, #496188, #627fa4);
-    height: 665px;
+    background-color: rgba(249, 229, 17, 0.685);
+    height: 1405px;
     margin: 0;
 }
 
+
 .contenedor-misproyectos h3 {
     border-top: 1px solid black;
-    padding-top: 20px;
+    padding-top: 40px;
     font-size: 30px;
-    color: white;
-    margin: 0;
+    font-weight: 700;
+    color: rgb(214, 90, 111);
 }
 
 .misproyectos-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    margin: 30px 0 30px 0;
+}
+.card-img{
+    width: 100%;
+    height: 100%; 
 }
 
 .misproyectos-cards a {
@@ -145,24 +154,22 @@ main {
 
 .proyecto {
     background-color: rgb(233, 229, 229);
-    width: 80%;
-    margin: 3px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 200px;
+    margin: 20px 0 20px 0;
+    height: 200px;
     font-weight: 100;
     font-size: 18px;
     border: none;
 }
 
 .contenedor-contactame {
+    margin: ;
     height: 200px;
     text-align: center;
 }
 
 .contenedor-contacto {
-    width: 320px;
+    width: 100%;
     height: 200px;
     display: flex;
     justify-content: center;
@@ -185,11 +192,10 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 318px;
+    width: 100%;
     height: 430px;
     text-align: center;
-    background-color: rgb(163, 195, 199);
-    border: 1px solid rgb(0, 0, 0);
+    background-color: rgba(255, 238, 46, 0.589);
 }
 
 .input {
@@ -211,7 +217,7 @@ main {
 }
 
 footer nav {
-    width: 320px;
+    width: 100%;
     height: 80px;
     background-color: rgba(13, 36, 69, 0.789);
     font-size: 11px;
@@ -221,3 +227,78 @@ footer a {
     color: white;
     font-weight: 900;
 }
+@media (min-width:351px){
+    
+body nav{
+    height: 80px;
+    font-size: 18px
+}
+.contenedor-mihero{
+    height: 150px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+
+}
+.mihero{
+    display: flex;
+    flex-wrap: wrap;
+    height: 550px;
+    width: 100%;
+}
+.contenedor-mihero{
+    width: 100%;
+}
+#imagen-hero{
+    width: 50%;
+    height: 400px;
+}
+.contenedor-sobremi{
+    width: 50%;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedor-sobremi h4{
+    font-size: 22px;
+    margin: 15px 0 0 0;
+}
+.contenedor-sobremi p{
+    width: 60%;
+    height: 150px;
+    font-size: 20px;
+}
+main .contenedor-conocimientos{
+    height: 500px;
+    width: 100%;
+    padding-top: 30px;
+}
+
+main .contenedor-conocimientos h3{
+    font-size: 40px;
+
+}
+.contenedor-misproyectos{
+    height: 900px;
+}
+
+.misproyectos-cards{
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.contenedor-misproyectos img{
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+}
+
