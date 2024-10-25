@@ -11,6 +11,8 @@ body {
 }
 
 nav {
+    position: sticky;
+    z-index: 9999;
     margin: 0;
     display: flex;
     align-items: center;
@@ -56,7 +58,7 @@ nav a {
 
 .contenedor-sobremi {
     margin: 0;
-    background-color: rgba(255, 255, 255, 0.211);
+    background-color: rgba(255, 200, 0, 0.381);
     text-align: justify;
     height: 290px;
 }
@@ -94,7 +96,7 @@ main {
     box-sizing: border-box;
     margin: 0;
     padding: 5px;
-    background-color:rgb(120, 213, 216);
+    background-color:rgba(111, 205, 147, 0.789);
 }
 
 .contenedor-cards {
@@ -122,7 +124,7 @@ main {
 .contenedor-misproyectos {
     text-align: center;
     background-color: rgba(249, 229, 17, 0.685);
-    height: 1405px;
+    height: 1605px;
     margin: 0;
 }
 
@@ -145,15 +147,21 @@ main {
 .card-img{
     width: 100%;
     height: 100%; 
+    transition: all ease-in-out 0.4s;
+}
+.card-img:hover{
+    transform: scale(1.1);
+
 }
 
 .misproyectos-cards a {
     text-decoration: none;
     color: black;
+    width: 100%;
+    height: 100%;
 }
 
 .proyecto {
-    background-color: rgb(233, 229, 229);
     width: 200px;
     margin: 20px 0 20px 0;
     height: 200px;
@@ -194,7 +202,7 @@ main {
     width: 100%;
     height: 430px;
     text-align: center;
-    background-color: rgba(255, 238, 46, 0.589);
+    background-color: rgba(255, 200, 0, 0.381);
 }
 
 .input {
@@ -217,8 +225,8 @@ main {
 
 footer nav {
     width: 100%;
-    height: 80px;
-    background-color: rgba(13, 36, 69, 0.789);
+    height: 120px;
+    background-color: rgba(111, 205, 147, 0.789);
     font-size: 11px;
 }
 
@@ -282,22 +290,26 @@ main .contenedor-conocimientos h3{
     font-size: 40px;
 
 }
-.contenedor-misproyectos{
-    height: 900px;
-}
+/* .contenedor-misproyectos{
+    height: 8000px;
+    width: 100%;
+} */
 
-.misproyectos-cards{
-    display: flex;
-    flex-direction: column;
-
-
-}
-
-.contenedor-misproyectos img{
-    display: block;
-    width: 200px;
-    height: 200px;
+.proyecto{
+    width: 42%;
+    height: 100%;
     margin: 10px;
+}
+.proyecto a{
+    width: 100%;
+    height: 100%;
+}
+
+ .card-img{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+   
 }
 }
 
