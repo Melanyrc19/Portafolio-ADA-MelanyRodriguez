@@ -4,51 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <nav id="arriba">
-        <a  href="#arriba">HOLA!</a>
-        <a href="#conocimientos">CONOCIMIENTO</a>
-        <a href="#proyectos">PROYECTOS</a>
-        <a href="#contactame">CONTACTO</a>
-    </nav>
-    <section class="mihero">
-        <div class="contenedor-mihero">
-         <h3>Hola! Soy Melany Rodriguez Coscia</h3>
-        <p>
-          Futura desarrolladora 
-        </p>   
-        </div>
-        <img id="imagen-hero" src="./img/perfil.jpg">
-        <div class="contenedor-sobremi">
-            <h4>Un poquito de mi:</h4>
-            <p>
-             Me recibi en el Conservatorio de música de Avellaneda con especializacion en guitarra clasica. Actualmente trabajo dando clases, estudio ingles y me encuentro realizando cursos de programacion Frontend. Soy autodidacta, aventurera, soñadora y un poco robotica.
-            </p>
-            <div id="button">
-                <button>Lo que hago</button>
+    <head>
+        <nav id="arriba">
+            <a  href="#arriba">HOLA!</a>
+            <a href="#conocimientos">CONOCIMIENTO</a>
+            <a href="#proyectos">PROYECTOS</a>
+            <a href="#contactame">CONTACTO</a>
+        </nav>
+        <section class="mihero">
+            <div class="contenedor-mihero">
+                <h3>Hola! Soy Melany Rodriguez Coscia</h3>
+                <p>
+                Futura desarrolladora 
+                </p>   
             </div>
-            
-        </div>
-    </section>
+            <img class="imagen-hero" src="./img/perfil.jpg">
+            <div class="contenedor-sobremi">
+                <h4>Un poquito de mi:</h4>
+                <p>
+                 Me recibi en el Conservatorio de música de Avellaneda con especializacion en guitarra clasica. Actualmente trabajo dando clases, estudio ingles y me encuentro realizando cursos de programacion Frontend. Soy autodidacta, aventurera, soñadora y un poco robotica.
+                </p>
+                <div id="button">
+                    <button>Lo que hago</button>
+                </div>
+            </div>
+        </section>
+    </head>
     <main>
         <section class="contenedor-conocimientos">
             <h3 id="conocimientos">Mis conocimientos</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur corrupti labore ipsam! Molestias, tempore expedita. </p>
             <div class="contenedor-cards">
-                <div class="card">
                     <img class="contenido-card-conocimiento"  src="./img/html2.png" alt="">
-                </div>
-                <div class="card">
                     <img class="contenido-card-conocimiento"  src="./img/css2.png" alt="">
-                </div>
-                <div class="card">
                     <img class="contenido-card-conocimiento" src="./img/js2png" alt="">
-                </div>
-                <div class="card">
                     <img class="contenido-card-conocimiento"  src="./img/git.png" alt="">
-                </div>
-                <div class="card">
                     <img class="contenido-card-conocimiento"  src="./img/ai2.png" alt="">
                 </div>
             </div>
@@ -56,22 +49,28 @@
         <section class="contenedor-misproyectos">
             <h3 id="proyectos">Mis proyectos</h3>
             <div class="misproyectos-cards">
-                <section class="card proyecto">
-                 <a href="#arriba"><img class="card-img" src="./img/mensaje.jpg" alt=""></a> 
+                <section class="proyecto">
+                    <p>Proyecto 1</p>
+                    <a href="#arriba"><img class="card-img" src="./img/mensaje.jpg" alt=""></a> 
                 </section>
-                <section class="card proyecto">
-                 <a href="#arriba"><img class="card-img" src="./img/inv.jpg" alt=""></a>
+                <section class="proyecto">
+                    <p>Proyecto 2</p>
+                    <a href="#arriba"><img class="card-img" src="./img/inv.jpg" alt=""></a>
                 </section>
-                <section class="card proyecto">
-                 <a href="#arriba"><img class="card-img" src="./img/proyecto2.png" alt=""></a> 
+                <section class="proyecto">
+                    <p>Proyecto 3</p>
+                    <a href="#arriba"><img class="card-img" src="./img/proyecto2.png" alt=""></a> 
                 </section>
-                <section class="card proyecto">
-                 <a href="#arriba "><img class="card-img" src="./img/proyecto6.png" alt=""></a>
+                <section class="proyecto">
+                    <p>Proyecto 4</p>
+                    <a href="#arriba "><img class="card-img" src="./img/proyecto6.png" alt=""></a>
                 </section>
-                <section class="card proyecto">
-                 <a href="#arriba "><img class="card-img" src="./img/investigador.jpg" alt=""></a>
+                <section class="proyecto">
+                    <p>Proyecto 5</p>
+                    <a href="#arriba "><img class="card-img" src="./img/investigador.jpg" alt=""></a>
                 </section>
-                <section class="card proyecto">
+                <section class="proyecto">
+                    <p>Proyecto 6</p>
                     <a href="#arriba "><img class="card-img" src="./img/proyecto4.png" alt=""></a>
                 </section>
             </div>
@@ -91,7 +90,7 @@
     <section class="contenedor-input">
         <h3>Escribime</h3>
         <div class="input">
-            <labe>Nombre: </label>
+            <label>Nombre: </label>
             <input class="contenido-input" type="text">
         </div>
         <div class="input">

@@ -1,16 +1,10 @@
-body {
+html{
+    scroll-behavior: smooth;
+}
+body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-html{
-    scroll-behavior: smooth;
 }
 
 nav {
@@ -32,52 +26,51 @@ nav a {
     color: white
 }
 
-.mihero {
+.mihero{
     height: 660px;
 }
 
-.contenedor-mihero {
+.mihero .contenedor-mihero {
     text-align: center;
 
 
 }
 
-.contenedor-mihero h3 {
+.mihero .contenedor-mihero h3 {
     height: 10px;
     font-weight: 500;
 }
 
-.contenedor-mihero p {
+.mihero .contenedor-mihero p {
     height: 8px;
     margin-bottom: 25px;
 }
 
 
-#imagen-hero {
+.mihero .imagen-hero {
     width: 100%;
     height: 300px;
-
 }
 
-.contenedor-sobremi {
+.mihero .contenedor-sobremi {
     margin: 0;
     background-color: rgba(255, 200, 0, 0.381);
     text-align: justify;
     height: 290px;
 }
 
-.contenedor-sobremi h4 {
+.mihero .contenedor-sobremi h4 {
     margin: 0;
     padding-top: 10px;
     /* padding-left: 9px; */
     text-align: center;
 }
 
-.contenedor-sobremi p {
+.mihero .contenedor-sobremi p {
     padding: 0 20px 0 20px;
 }
 
-.contenedor-sobremi button {
+.mihero .contenedor-sobremi button {
     width: 100px;
     box-shadow: 3px 3px 3px;
 }
@@ -92,7 +85,7 @@ main {
     flex-direction: column;
 }
 
-.contenedor-conocimientos {
+main .contenedor-conocimientos {
     background-color: rgb(255, 255, 255);
     color: rgb(246, 238, 238);
     text-align: center;
@@ -101,76 +94,70 @@ main {
     padding: 5px;
     background-color:rgba(111, 205, 147, 0.789);
 }
-
-.contenedor-cards {
+main .contenedor-conocimientos h3{
+    font-size: 25px;
+}
+main .contenedor-cards {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     width: 100%;
     margin: 0;
     margin-bottom: 15px;
 }
-
-.contenido-card-conocimiento {
-    width: 80px;
-    height: 120px;
+main .contenido-card-conocimiento {
+    width: ;
+    height: 90px;
+    margin: 10px;
 }
 
-.card {
-    border: 1px solid black;
-    width: 26%;
-    height: 120px;
-    margin: 7px;
-    background-color: white;
-}
-
-.contenedor-misproyectos {
+main .contenedor-misproyectos {
     text-align: center;
     background-color: rgba(249, 230, 17, 0.515);
     height: 1605px;
-    margin: 0;
+    margin: 0px;
 }
 
-
-.contenedor-misproyectos h3 {
-    border-top: 1px solid black;
-    padding-top: 40px;
+main .contenedor-misproyectos h3 {
     font-size: 30px;
     font-weight: 700;
     color: rgb(214, 90, 111);
 }
 
-.misproyectos-cards {
+main .misproyectos-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin: 30px 0 30px 0;
 }
-.card-img{
-    width: 100%;
-    height: 100%; 
-    transition: all ease-in-out 0.4s;
-}
-.card-img:hover{
-    transform: scale(1.1);
-
-}
-
-.misproyectos-cards a {
-    text-decoration: none;
-    color: black;
-    width: 100%;
-    height: 100%;
-}
-
-.proyecto {
+main .misproyectos-cards .proyecto {
     width: 200px;
-    margin: 20px 0 20px 0;
+    margin: 20px 0 20px ;
     height: 200px;
     font-weight: 100;
     font-size: 18px;
     border: none;
+}
+main .misproyectos-cards .proyecto p {
+    margin: 8px;
+}
+main .misproyectos-cards .proyecto .card-img{
+    width: 100%;
+    height: 100%; 
+    transition: all ease-in-out 0.4s;
+}
+main .misproyectos-cards .card-img:hover{
+    transform: scale(1.1);
+
+}
+
+main .misproyectos-cards a {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    height: 100%;
 }
 
 .contenedor-contactame {
@@ -178,7 +165,7 @@ main {
     text-align: center;
 }
 
-.contenedor-contacto {
+.contenedor-contactame .contenedor-contacto {
     width: 100%;
     height: 200px;
     display: flex;
@@ -191,7 +178,7 @@ main {
     font-weight: 400;
 }
 
-.contenido-contacto {
+.contenedor-contactame .contenedor-contacto .contenido-contacto {
     width: 60px;
     height: 60px;
     margin: 10px;
@@ -208,7 +195,7 @@ main {
     background-color: rgba(255, 200, 0, 0.381);
 }
 
-.input {
+.contenedor-input .input {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -217,12 +204,12 @@ main {
     padding: 10px;
 }
 
-.contenido-input {
+.contenedor-input .input .contenido-input {
     margin-top: 5px;
     width: 200px;
 }
 
-#submit {
+.contenedor-input #submit {
     margin: 10px;
 }
 
@@ -237,35 +224,33 @@ footer a {
     color: white;
     font-weight: 900;
 }
-@media (min-width:351px){
+@media (min-width:768px){
     
 body nav{
     height: 80px;
     font-size: 18px
 }
-.contenedor-mihero{
-    height: 150px;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
 
-}
 .mihero{
     display: flex;
     flex-wrap: wrap;
     height: 550px;
     width: 100%;
 }
-.contenedor-mihero{
+.mihero .contenedor-mihero{
+    height: 150px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
     width: 100%;
 }
-#imagen-hero{
+.mihero .imagen-hero{
     width: 50%;
     height: 400px;
 }
-.contenedor-sobremi{
+.mihero .contenedor-sobremi{
     width: 50%;
     height: 400px;
     margin: 0;
@@ -275,51 +260,60 @@ body nav{
     align-items: center;
     text-align: center;
 }
-.contenedor-sobremi h4{
+.mihero .contenedor-sobremi h4{
     font-size: 22px;
     margin: 15px 0 0 0;
 }
-.contenedor-sobremi p{
+.mihero .contenedor-sobremi p{
     width: 60%;
     height: 250px;
     font-size: 20px;
 }
 main .contenedor-conocimientos{
-    height: 500px;
+    height: 600px;
     width: 100%;
     padding-top: 30px;
 }
 
 main .contenedor-conocimientos h3{
     font-size: 40px;
+    padding: 0;
+    margin-top: 0;
+}
+main .contenedor-conocimientos p{
+    font-size: 25px;
+    padding: 0 20px;
+}
+main .contenedor-cards{
+    padding: auto;}
+main .contenedor-conocimientos .contenedor-cards .contenido-card-conocimiento{
+    width: 19%;
+    height: 30%;
+    margin: 15px 25px;
 
 }
-/* .contenedor-misproyectos{
-    height: 8000px;
-    width: 100%;
-} */
+.contenedor-misproyectos{
+    height: 1000px;
+}
 
-.proyecto{
-    width: 42%;
+.contenedor-misproyectos .misproyectos-cards .proyecto{
+    width: 30%;
     height: 100%;
-    margin: 10px;
+    margin: 25px;
 }
-.proyecto a{
+.contenedor-misproyectos .misproyectos-cards .proyecto a{
     width: 100%;
     height: 100%;
 }
 
- .card-img{
-    width: 300px;
-    height: 300px;
-    margin: 20px;
-   
+.contenedor-misproyectos .misproyectos-cards .proyecto .card-img{
+    width: 225px;
+    height: 200px;
 }
+
 }
 @media (min-width:1024px) {
-    body{
-    
-    }
+
 .mihero{
     width: 100%;
     height: 600px;
@@ -328,20 +322,19 @@ main .contenedor-conocimientos h3{
     width: 100%;
 }
 /* corregir esto de aabajo cambiando id por class en todas */
-#imagen-hero{
+.mihero .imagen-hero{
     width: 30%;
     padding-left: 20%;
-    
 }
 
-.contenedor-sobremi{
+.mihero .contenedor-sobremi{
     text-align: center;
     padding-top: 50px;
     width: 50%;
     height: 390px;
     font-size: 10px;
 }
-.contenedor-sobremi p{
+.mihero .contenedor-sobremi p{
     font-size: 18px;
     width: 50%;
     height: 80%;
