@@ -27,7 +27,7 @@ nav a {
 }
 
 .mihero{
-    height: 660px;
+    height: 650px;
 }
 
 .mihero .contenedor-mihero {
@@ -97,6 +97,9 @@ main .contenedor-conocimientos {
 main .contenedor-conocimientos h3{
     font-size: 25px;
 }
+main .contenedor-conocimientos p{
+    display: none;
+}
 main .contenedor-cards {
     display: flex;
     justify-content: center;
@@ -107,7 +110,6 @@ main .contenedor-cards {
     margin-bottom: 15px;
 }
 main .contenido-card-conocimiento {
-    width: ;
     height: 90px;
     margin: 10px;
 }
@@ -150,8 +152,9 @@ main .misproyectos-cards .proyecto .card-img{
 }
 main .misproyectos-cards .card-img:hover{
     transform: scale(1.1);
-
+    
 }
+
 
 main .misproyectos-cards a {
     text-decoration: none;
@@ -194,8 +197,19 @@ main .misproyectos-cards a {
     text-align: center;
     background-color: rgba(255, 200, 0, 0.381);
 }
+.contenedor-input .cajita{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 400px;
+    box-shadow: 5px 3px 3px rgb(93, 90, 95);
+    border-radius: 20px;
+    background-color: rgba(218, 212, 234, 0.82);
+}
 
-.contenedor-input .input {
+.contenedor-input .cajita .input {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -204,12 +218,12 @@ main .misproyectos-cards a {
     padding: 10px;
 }
 
-.contenedor-input .input .contenido-input {
+.contenedor-input .cajita .input .contenido-input {
     margin-top: 5px;
     width: 200px;
 }
 
-.contenedor-input #submit {
+.contenedor-input .cajita #submit {
     margin: 10px;
 }
 
@@ -278,11 +292,11 @@ main .contenedor-conocimientos{
 main .contenedor-conocimientos h3{
     font-size: 40px;
     padding: 0;
-    margin-top: 0;
+    margin: 0;
 }
 main .contenedor-conocimientos p{
+    display: inline-block;
     font-size: 25px;
-    padding: 0 20px;
 }
 main .contenedor-cards{
     padding: auto;}
@@ -309,6 +323,31 @@ main .contenedor-misproyectos{
 .contenedor-misproyectos .misproyectos-cards .proyecto .card-img{
     width: 225px;
     height: 200px;
+}
+.contenedor-contactame{
+    height: 300px;
+}
+.contenedor-contactame #contactame{
+    font-size: 35px;
+    font-style: oblique;
+    padding-top: 30px;
+    color: green;
+    text-decoration:underline;
+}
+.contenedor-contactame .contenedor-contacto{
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-contactame .contenedor-contacto .contenido-contacto{
+    width: 30% ;
+    height: 30%;
+}
+.contenedor-input .cajita{
+    width: 50%;
+
+}
+footer nav{
+    height: 120px;
 }
 
 }
