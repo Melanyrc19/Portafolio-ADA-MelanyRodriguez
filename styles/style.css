@@ -141,7 +141,7 @@ main .contenido-card-conocimiento {
 main .contenedor-misproyectos {
     text-align: center;
     background-color: var(--colorDos);
-    overflow: auto;
+    height: fit-content;
     padding: 15px;
 }
 
