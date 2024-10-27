@@ -1,0 +1,18 @@
+
+
+
+.mensaje{
+    margin: auto;
+    text-align: center;
+    background-color: rgba(213, 104, 144, 0.582);
+    border: 2px solid black;
+    width: 300px;
+    height: 100px;
+}
+h2{
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    font-size: 15px;
+    margin: 40px;
+}
