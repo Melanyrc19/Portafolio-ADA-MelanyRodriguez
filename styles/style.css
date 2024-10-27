@@ -17,7 +17,7 @@ nav {
     justify-content: space-around;
     height: 40px;
     width: 100%;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
     background-color: var(--colorUno);
 }
@@ -35,7 +35,6 @@ nav a {
 .mihero .contenedor-mihero {
     text-align: center;
 
-
 }
 
 .mihero .contenedor-mihero h3 {
@@ -52,7 +51,6 @@ nav a {
     font-weight: 400;
     font-size: 20px;
 }
-
 
 .mihero .imagen-hero {
     width: 100%;
@@ -117,7 +115,10 @@ main .contenedor-conocimientos {
     background-color:var(--colorUno);
 }
 main .contenedor-conocimientos h3{
-    font-size: 25px;
+    font-size: 30px;
+    font-family: var(--fontTres);
+    color: var(--colorSeis);
+    font-weight: 400;
 }
 main .contenedor-conocimientos p{
     display: none;
@@ -132,8 +133,9 @@ main .contenedor-cards {
     margin-bottom: 15px;
 }
 main .contenido-card-conocimiento {
-    height: 90px;
-    margin: 10px;
+    height: 100px;
+    width: 100px;
+    margin: 10px 40px;
 }
 
 main .contenedor-misproyectos {
@@ -192,28 +194,32 @@ main .misproyectos-cards a {
     height: 200px;
     text-align: center;
 }
-
-.contenedor-contactame .contenedor-contacto {
-    width: 100%;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-}
-
 .contenedor-contactame #contactame {
     margin-bottom: 20px;
     font-size: 25px;
     font-weight: 400;
-    font-style: oblique;
     padding-top: 30px;
     color: var(--colorSeis);
+    font-family: var(--fontTres);
     text-decoration:underline;
 }
 
+.contenedor-contactame .contenedor-contacto {
+    width: 100%;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+.contenedor-contacto a{
+    width: 200px;
+    height: 200px;
+}
+
 .contenedor-contactame .contenedor-contacto .contenido-contacto {
-    width: 60px;
-    height: 60px;
-    margin: 10px;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
 }
 
 .contenedor-input {
@@ -225,6 +231,7 @@ main .misproyectos-cards a {
     height: 430px;
     text-align: center;
     background-color: var(--colorDos);
+    padding: 30px 0px 30px 0px;
 }
 .contenedor-input .cajita{
     display: flex;
@@ -236,6 +243,7 @@ main .misproyectos-cards a {
     box-shadow: 5px 3px 3px rgb(93, 90, 95);
     border-radius: 20px;
     background-color: var(--colorCinco);
+    font-family: var(--fontTres);
 }
 
 .contenedor-input .cajita .input {
@@ -255,6 +263,7 @@ main .misproyectos-cards a {
 .contenedor-input .cajita #submit {
     margin: 10px;
     background-color: white;
+    font-family: var(--fontTres);
 }
 #submit:hover{
     cursor:pointer;
@@ -264,7 +273,8 @@ footer nav {
     width: 100%;
     height: 120px;
     background-color: var(--colorUno);
-    font-size: 11px;
+    font-size: 12px;
+    font-family: var(--fontTres);
 }
 
 footer a {
@@ -281,17 +291,25 @@ body nav{
 .mihero{
     display: flex;
     flex-wrap: wrap;
-    height: 550px;
+    height: 600px;
     width: 100%;
 }
 .mihero .contenedor-mihero{
-    height: 150px;
+    height: 200px;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 20px;
     width: 100%;
+}
+.mihero .contenedor-mihero h3{
+    font-size: 35px;
+    margin: 30px 0;
+}
+.mihero .contenedor-mihero p{
+    font-size: 30px;
+    padding-bottom: 30px;
 }
 .mihero .imagen-hero{
     width: 50%;
@@ -372,8 +390,8 @@ main .contenedor-misproyectos{
     align-items: center;
 }
 .contenedor-contactame .contenedor-contacto .contenido-contacto{
-    width: 30% ;
-    height: 30%;
+    width: 40% ;
+    height: 40%;
 }
 .contenedor-input .cajita{
     width: 50%;
@@ -388,7 +406,7 @@ footer nav{
 
 .mihero{
     width: 100%;
-    height: 600px;
+    height: 668px;
 }
 .mihero .contenedor-mihero{
     width: 100%;
@@ -403,7 +421,7 @@ footer nav{
     text-align: center;
     padding-top: 50px;
     width: 50%;
-    height: 400px;
+    height: 415px;
     font-size: 10px;
 }
 .mihero .contenedor-sobremi p{
@@ -412,11 +430,12 @@ footer nav{
     height: 60%;
 }
 main{
-    height: 1400px;
+    height: 1100px;
 }
 
 main contenedor-conocimientos{
     height: 100px;   
+    margin: 30px;
 }
 
 main .contenedor-conocimientos .contenedor-cards .contenido-card-conocimiento{
@@ -424,6 +443,7 @@ main .contenedor-conocimientos .contenedor-cards .contenido-card-conocimiento{
     height: 100px;
     margin: 20px;
 }
+
 main .contenedor-misproyectos{
     padding: 0 40px;
 }
