@@ -76,7 +76,7 @@ nav a {
     font-family: var(--fontTres);
 }
 
-#button {
+.mihero .contenedor-sobremi #button {
     text-align: center;
     position: relative;
     width: 100px;
