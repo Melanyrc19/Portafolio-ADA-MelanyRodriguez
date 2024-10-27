@@ -1,0 +1,14 @@
+:root {
+    --colorUno:rgba(111, 205, 147, 0.789);;
+    --colorDos: rgba(255, 200, 0, 0.381);
+    --colorTres: rgba(249, 230, 17, 0.515);
+    --colorCuatro: rgba(255, 200, 0, 0.381);
+    --colorCinco:rgba(218, 212, 234, 0.82);
+    --colorSeis:  blueviolet;
+    --fontUno: "kaushan script";
+    --fontDos: "Sacramento";
+    --fontTres: "Comic Neue";
+    --fontCuatro: "Merienda";
+    --fontCinco: "Petit Formal Script"
+
+}

@@ -1,3 +1,5 @@
+@import url(./home.css);
+
 html{
     scroll-behavior: smooth;
 }
@@ -6,7 +8,6 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
-
 nav {
     position: sticky;
     z-index: 9999;
@@ -18,16 +19,17 @@ nav {
     width: 100%;
     font-size: 10px;
     font-weight: 700;
-    background-color: rgba(111, 205, 147, 0.789);
+    background-color: var(--colorUno);
 }
 
 nav a {
     text-decoration: none;
-    color: white
+    color: white;
+    font-family: var(--fontTres);
 }
 
 .mihero{
-    height: 650px;
+    height: 700px;
 }
 
 .mihero .contenedor-mihero {
@@ -38,12 +40,17 @@ nav a {
 
 .mihero .contenedor-mihero h3 {
     height: 10px;
-    font-weight: 500;
+    font-family: var(--fontDos);
+    font-weight: 600;
+    font-size: 20px;
 }
 
 .mihero .contenedor-mihero p {
     height: 8px;
     margin-bottom: 25px;
+    font-family: var(--fontDos);
+    font-weight: 400;
+    font-size: 20px;
 }
 
 
@@ -53,26 +60,37 @@ nav a {
 }
 
 .mihero .contenedor-sobremi {
-    margin: 0;
-    background-color: rgba(255, 200, 0, 0.381);
-    text-align: justify;
-    height: 290px;
+    background-color: var(--colorDos);
+    text-align: center;
+    height: 272px;
+    padding-top: 30px;
+    padding: 30px 15px 30px 15px;
 }
 
 .mihero .contenedor-sobremi h4 {
     margin: 0;
     padding-top: 10px;
-    /* padding-left: 9px; */
     text-align: center;
+    font-family: var(--fontTres);
+    text-decoration: underline;
 }
 
 .mihero .contenedor-sobremi p {
     padding: 0 20px 0 20px;
+    font-family: var(--fontTres);
 }
 
 .mihero .contenedor-sobremi button {
-    width: 100px;
+    width: 110px;
+    height: 30px;
     box-shadow: 3px 3px 3px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 10px 10px;
+}
+.mihero .contenedor-sobremi button:hover {
+    cursor:pointer;
+    background-color: var(--colorCinco);
 }
 .mihero .contenedor-sobremi button a{
     text-decoration: none;
@@ -96,7 +114,7 @@ main .contenedor-conocimientos {
     box-sizing: border-box;
     margin: 0;
     padding: 5px;
-    background-color:rgba(111, 205, 147, 0.789);
+    background-color:var(--colorUno);
 }
 main .contenedor-conocimientos h3{
     font-size: 25px;
@@ -120,15 +138,17 @@ main .contenido-card-conocimiento {
 
 main .contenedor-misproyectos {
     text-align: center;
-    background-color: rgba(249, 230, 17, 0.515);
+    background-color: var(--colorDos);
     height: 1605px;
-    margin: 0px;
+    padding: 15px;
 }
 
 main .contenedor-misproyectos h3 {
     font-size: 30px;
-    font-weight: 700;
-    color: rgb(214, 90, 111);
+    font-weight: 500;
+    color:  blueviolet;
+    font-family: var(--fontTres);
+
 }
 
 main .misproyectos-cards {
@@ -148,6 +168,9 @@ main .misproyectos-cards .proyecto {
 }
 main .misproyectos-cards .proyecto p {
     margin: 8px;
+    text-decoration: underline;
+    font-family: var(--fontTres);
+    
 }
 main .misproyectos-cards .proyecto .card-img{
     width: 100%;
@@ -156,9 +179,7 @@ main .misproyectos-cards .proyecto .card-img{
 }
 main .misproyectos-cards .card-img:hover{
     transform: scale(1.1);
-    
 }
-
 
 main .misproyectos-cards a {
     text-decoration: none;
@@ -179,10 +200,14 @@ main .misproyectos-cards a {
     justify-content: center;
 }
 
-#contactame {
+.contenedor-contactame #contactame {
     margin-bottom: 20px;
     font-size: 25px;
     font-weight: 400;
+    font-style: oblique;
+    padding-top: 30px;
+    color: var(--colorSeis);
+    text-decoration:underline;
 }
 
 .contenedor-contactame .contenedor-contacto .contenido-contacto {
@@ -199,7 +224,7 @@ main .misproyectos-cards a {
     width: 100%;
     height: 430px;
     text-align: center;
-    background-color: rgba(255, 200, 0, 0.381);
+    background-color: var(--colorDos);
 }
 .contenedor-input .cajita{
     display: flex;
@@ -210,7 +235,7 @@ main .misproyectos-cards a {
     height: 400px;
     box-shadow: 5px 3px 3px rgb(93, 90, 95);
     border-radius: 20px;
-    background-color: rgba(218, 212, 234, 0.82);
+    background-color: var(--colorCinco);
 }
 
 .contenedor-input .cajita .input {
@@ -229,12 +254,16 @@ main .misproyectos-cards a {
 
 .contenedor-input .cajita #submit {
     margin: 10px;
+    background-color: white;
+}
+#submit:hover{
+    cursor:pointer;
 }
 
 footer nav {
     width: 100%;
     height: 120px;
-    background-color: rgba(111, 205, 147, 0.789);
+    background-color: var(--colorUno);
     font-size: 11px;
 }
 
@@ -335,7 +364,7 @@ main .contenedor-misproyectos{
     font-size: 35px;
     font-style: oblique;
     padding-top: 30px;
-    color: green;
+    color: rgb(128, 0, 128);
     text-decoration:underline;
 }
 .contenedor-contactame .contenedor-contacto{
