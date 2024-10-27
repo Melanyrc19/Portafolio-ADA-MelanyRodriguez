@@ -78,13 +78,44 @@ nav a {
     font-family: var(--fontTres);
 }
 
+#button {
+    text-align: center;
+    position: relative;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
 .mihero .contenedor-sobremi button {
-    width: 110px;
-    height: 30px;
-    box-shadow: 3px 3px 3px;
-    background-color: white;
-    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(222, 201, 240);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    outline: none;
+    border-radius: 500px;
+    display: inline-block;
+    text-align: center;
     margin: 10px 10px;
+    position: absolute;
+    z-index: 2;
+
+}
+.sombra-boton{
+    z-index: -1;
+    position: absolute;
+    top: 15%;
+    left:15%;
+    border-radius: 500px;
+    display: inline-block;
+    background-color: rgb(211, 214, 243);
+    width: 100%;
+    height: 100%;
+
+    
 }
 .mihero .contenedor-sobremi button:hover {
     cursor:pointer;
@@ -93,10 +124,6 @@ nav a {
 .mihero .contenedor-sobremi button a{
     text-decoration: none;
     color: black;
-}
-
-#button {
-    text-align: center;
 }
 
 main {
