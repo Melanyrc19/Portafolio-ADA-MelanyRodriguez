@@ -141,7 +141,7 @@ main .contenido-card-conocimiento {
 main .contenedor-misproyectos {
     text-align: center;
     background-color: var(--colorDos);
-    height: 1605px;
+    height: fit-content;
     padding: 15px;
 }
 
@@ -245,6 +245,9 @@ main .misproyectos-cards a {
     background-color: var(--colorCinco);
     font-family: var(--fontTres);
 }
+/* .contenedor-input .cajita h3{
+    
+} */
 
 .contenedor-input .cajita .input {
     display: flex;
@@ -380,7 +383,6 @@ main .contenedor-misproyectos{
 }
 .contenedor-contactame #contactame{
     font-size: 35px;
-    font-style: oblique;
     padding-top: 30px;
     color: rgb(128, 0, 128);
     text-decoration:underline;
@@ -454,8 +456,8 @@ main .contenedor-misproyectos{
     width: 25%;
 }
 .contenedor-misproyectos .misproyectos-cards .proyecto .card-img{
-    width: 80%;
-    height: 80%;
+    width: 180px;
+    height: 180px;
     margin: 0;
     padding: 0;
 }
