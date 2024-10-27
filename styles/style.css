@@ -9,8 +9,6 @@ body{
     box-sizing: border-box;
 }
 nav {
-    position: sticky;
-    z-index: 9999;
     margin: 0;
     display: flex;
     align-items: center;
@@ -432,15 +430,24 @@ footer nav{
 
 }
 @media (min-width:1024px) {
+    .nav{
+        position:fixed;
+        z-index: 9999;
+    }
 
 .mihero{
     width: 100%;
-    height: 668px;
+    height: fit-content;
 }
 .mihero .contenedor-mihero{
     width: 100%;
+    height: 260px;
 }
 /* corregir esto de aabajo cambiando id por class en todas */
+.mihero .contenedor-mihero p{
+    padding: 0;
+
+}
 .mihero .imagen-hero{
     width: 30%;
     padding-left: 20%;
@@ -450,13 +457,14 @@ footer nav{
     text-align: center;
     padding-top: 50px;
     width: 50%;
-    height: 415px;
+    height: 355px;
     font-size: 10px;
 }
 .mihero .contenedor-sobremi p{
     font-size: 18px;
     width: 50%;
-    height: 60%;
+    height: 40%;
+    padding: 0;
 }
 main{
     height: 1100px;
@@ -464,7 +472,7 @@ main{
 
 main contenedor-conocimientos{
     height: 100px;   
-    margin: 30px;
+    padding-top: 40px;
 }
 
 main .contenedor-conocimientos .contenedor-cards .contenido-card-conocimiento{
@@ -487,5 +495,6 @@ main .contenedor-misproyectos{
     height: 180px;
     margin: 0;
     padding: 0;
+
 }
 }
