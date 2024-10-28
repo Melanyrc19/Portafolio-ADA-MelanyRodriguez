@@ -27,7 +27,7 @@ nav a {
 }
 
 .mihero{
-    height: 700px;
+    height: fit-content;
 }
 
 .mihero .contenedor-mihero {
@@ -57,34 +57,27 @@ nav a {
 
 .mihero .contenedor-sobremi {
     background-color: var(--colorDos);
-    text-align: center;
-    height: 272px;
-    padding-top: 30px;
-    padding: 30px 15px 30px 15px;
+    text-align: start;
+    height: fit-content;
+    padding:30px 30px;
 }
 
 .mihero .contenedor-sobremi h4 {
-    margin: 0;
     padding-top: 10px;
-    text-align: center;
+    text-align: start;
     font-family: var(--fontTres);
     text-decoration: underline;
 }
 
 .mihero .contenedor-sobremi p {
-    padding: 0 20px 0 20px;
     font-family: var(--fontTres);
 }
 
 .mihero .contenedor-sobremi #button {
-    text-align: center;
+    text-align: start;
     position: relative;
     width: 100px;
     height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
 }
 
 .mihero .contenedor-sobremi button {
@@ -95,9 +88,10 @@ nav a {
     overflow: hidden;
     outline: none;
     border-radius: 500px;
+    border: 1px solid;
     display: inline-block;
     text-align: center;
-    margin: 10px 10px;
+    margin: 0px 0px;
     position: absolute;
     z-index: 2;
 
@@ -323,7 +317,7 @@ body nav{
     width: 100%;
 }
 .mihero .contenedor-mihero{
-    height: 200px;
+    height: fit-content;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -344,23 +338,25 @@ body nav{
     height: 400px;
 }
 .mihero .contenedor-sobremi{
-    width: 50%;
-    height: 400px;
+    width: 40%;
+    height: fit-content;
     margin: 0;
-    padding: 0;
+    padding: 30px 37px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: start;
+    text-align: start;
 }
 .mihero .contenedor-sobremi h4{
     font-size: 22px;
-    margin: 15px 0 0 0;
+    width: 55%;
+    padding: 0;
 }
 .mihero .contenedor-sobremi p{
-    width: 60%;
+    width: 100%;
     height: 250px;
     font-size: 20px;
+    margin: 0;
 }
 main .contenedor-conocimientos{
     height: 600px;
@@ -430,42 +426,47 @@ footer nav{
 
 }
 @media (min-width:1024px) {
-    .nav{
-        position:fixed;
-        z-index: 9999;
-    }
+.nav{
+    position:fixed;
+    z-index: 9999;
+    height: 60px;
+}
 
 .mihero{
     width: 100%;
-    height: fit-content;
+    height: 600px;
 }
 .mihero .contenedor-mihero{
     width: 100%;
-    height: 260px;
-}
-/* corregir esto de aabajo cambiando id por class en todas */
-.mihero .contenedor-mihero p{
     padding: 0;
+    height: 100px;
+    margin: 90px 0 10px 0 ;
 
 }
 .mihero .imagen-hero{
-    width: 30%;
-    padding-left: 20%;
+    width: 35%;
+    padding-left: 13%;
+    
 }
 
 .mihero .contenedor-sobremi{
-    text-align: center;
-    padding-top: 50px;
-    width: 50%;
-    height: 355px;
+    width: 35%;
+    height: fit-content;
     font-size: 10px;
+    margin: 30px 0 0 0;
+    padding: auto auto;
 }
 .mihero .contenedor-sobremi p{
     font-size: 18px;
-    width: 50%;
-    height: 40%;
+    width: 90%;
     padding: 0;
+    height: fit-content;
 }
+.mihero .contenedor-sobremi #button{
+    margin: 30px 0 10px 0;
+
+}
+
 main{
     height: 1100px;
 }
