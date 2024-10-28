@@ -144,7 +144,7 @@ main .contenedor-conocimientos p{
 }
 main .contenedor-cards {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
@@ -152,9 +152,10 @@ main .contenedor-cards {
     margin-bottom: 15px;
 }
 main .contenido-card-conocimiento {
-    height: 100px;
-    width: 100px;
-    margin: 10px 40px;
+    height: 90px;
+    width: 90px;
+    margin: 10px 20px;
+    box-shadow: 4px 3px 6px rgb(71, 69, 69);
 }
 
 main .contenedor-misproyectos {
@@ -169,7 +170,6 @@ main .contenedor-misproyectos h3 {
     font-weight: 500;
     color:  blueviolet;
     font-family: var(--fontTres);
-
 }
 
 main .misproyectos-cards {
@@ -194,9 +194,10 @@ main .misproyectos-cards .proyecto p {
     
 }
 main .misproyectos-cards .proyecto .card-img{
-    width: 100%;
-    height: 100%; 
+    width: 90%;
+    height: 90%; 
     transition: all ease-in-out 0.4s;
+    box-shadow: 5px 5px 8px gray;
 }
 main .misproyectos-cards .card-img:hover{
     transform: scale(1.1);
@@ -247,18 +248,24 @@ main .misproyectos-cards a {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 430px;
+    height: fit-content;
     text-align: center;
     background-color: var(--colorDos);
-    padding: 30px 0px 30px 0px;
+    padding: 40px 0px 30px 0px;
+}
+.contenedor-input h3{
+    margin: 0;
+    padding: 10px;
+}
+.contenedor-input form{
+    padding: 30px;
 }
 .contenedor-input .cajita{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 90%;
-    height: 400px;
+    align-items: start;
+    width: 70%;
     box-shadow: 5px 3px 3px rgb(93, 90, 95);
     border-radius: 20px;
     background-color: var(--colorCinco);
@@ -272,23 +279,32 @@ main .misproyectos-cards a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    width: 80px;
+    align-items: start;
     padding: 10px;
 }
 
 .contenedor-input .cajita .input .contenido-input {
     margin-top: 5px;
     width: 200px;
+    border: none;
+    border-radius: 5px;
 }
-
+.input textarea{
+    height: 80px;
+    padding: 1px 2px;
+}
 .contenedor-input .cajita #submit {
-    margin: 10px;
-    background-color: white;
+    margin: 11px;
     font-family: var(--fontTres);
+    border-radius: 10px;
+    width: 80px;
+    height: 30px;
+    background-color: rgba(244, 231, 245, 0.596);
+    box-shadow: 8px 5px 1px rgba(30, 28, 30, 0.559);
 }
 #submit:hover{
     cursor:pointer;
+    background-color: blue;
 }
 
 footer nav {
@@ -306,14 +322,14 @@ footer a {
 @media (min-width:768px){
     
 body nav{
-    height: 80px;
+    height: 50px;
     font-size: 18px
 }
 
 .mihero{
     display: flex;
     flex-wrap: wrap;
-    height: 600px;
+    height: 550px;
     width: 100%;
 }
 .mihero .contenedor-mihero{
@@ -351,6 +367,7 @@ body nav{
     font-size: 22px;
     width: 55%;
     padding: 0;
+    margin: 5px;
 }
 .mihero .contenedor-sobremi p{
     width: 100%;
@@ -359,22 +376,25 @@ body nav{
     margin: 0;
 }
 main .contenedor-conocimientos{
-    height: 600px;
+    height: fit-content;
     width: 100%;
-    padding-top: 30px;
+    padding: 30px;
+
 }
 
 main .contenedor-conocimientos h3{
-    font-size: 40px;
+    font-size: 30px;
     padding: 0;
     margin: 0;
 }
 main .contenedor-conocimientos p{
     display: inline-block;
-    font-size: 25px;
+    font-size: 20px;
 }
 main .contenedor-cards{
-    padding: auto;}
+    padding: auto;
+}
+
 main .contenedor-conocimientos .contenedor-cards .contenido-card-conocimiento{
     width: 19%;
     height: 30%;
@@ -399,6 +419,34 @@ main .contenedor-misproyectos{
     width: 225px;
     height: 200px;
 }
+
+
+
+.contenedor-input .cajita{
+    width: 50%;
+}
+
+.contenedor-input .cajita .input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    padding: 10px;
+}
+
+.contenedor-input .cajita .input .contenido-input {
+    margin-top: 10px;
+    width: 350px;
+    border: none;
+    border-radius: 10px;
+}
+.tamaño-input{
+    height: 30px;
+}
+
+
+
+
 .contenedor-contactame{
     height: 300px;
 }
@@ -416,10 +464,10 @@ main .contenedor-misproyectos{
     width: 40% ;
     height: 40%;
 }
-.contenedor-input .cajita{
-    width: 50%;
 
-}
+
+
+
 footer nav{
     height: 120px;
 }
@@ -429,12 +477,12 @@ footer nav{
 .nav{
     position:fixed;
     z-index: 9999;
-    height: 60px;
+    height: 50px;
 }
 
 .mihero{
     width: 100%;
-    height: 600px;
+    height: 587px;
 }
 .mihero .contenedor-mihero{
     width: 100%;
@@ -496,6 +544,54 @@ main .contenedor-misproyectos{
     height: 180px;
     margin: 0;
     padding: 0;
-
 }
+
+.contenedor-input .cajita{
+    width: 50%;
+}
+
+.contenedor-input .cajita .input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    padding: 10px;
+}
+
+.contenedor-input .cajita .input .contenido-input {
+    margin-top: 10px;
+    width: 350px;
+    border: none;
+    border-radius: 10px;
+}
+.tamaño-input{
+    height: 30px;
+}
+
+
+
+.contenedor-input .cajita{
+    width: 40%;
+}
+
+.contenedor-input .cajita .input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    
+}
+
+.contenedor-input .cajita .input .contenido-input {
+    margin-top: 10px;
+    width: 380px;
+    border: none;
+    border-radius: 10px;
+}
+.tamaño-input{
+    height: 30px;
+}
+
+
+
 }
