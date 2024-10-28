@@ -211,36 +211,51 @@ main .misproyectos-cards a {
 }
 
 .contenedor-contactame {
-    height: 200px;
+    height: fit-content;
     text-align: center;
+    margin: auto 10px;
 }
 .contenedor-contactame #contactame {
-    margin-bottom: 20px;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 400;
-    padding-top: 30px;
+    padding: 30px 30px 30px 10px;
     color: var(--colorSeis);
     font-family: var(--fontTres);
     text-decoration:underline;
+    margin: 0;
+
 }
 
 .contenedor-contactame .contenedor-contacto {
     width: 100%;
     height: 220px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: start;
     margin: 0;
 }
 .contenedor-contacto a{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
     width: 200px;
     height: 200px;
+  
 }
 
 .contenedor-contactame .contenedor-contacto .contenido-contacto {
-    width: 50px;
-    height: 50px;
-    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+    padding: auto auto;
+    margin: 0 20px 0 10px;
+
 }
+.contenedor-contactame .contenedor-contacto p{
+    padding: auto auto;
+    
+}
+
 
 .contenedor-input {
     display: flex;
@@ -271,9 +286,6 @@ main .misproyectos-cards a {
     background-color: var(--colorCinco);
     font-family: var(--fontTres);
 }
-/* .contenedor-input .cajita h3{
-    
-} */
 
 .contenedor-input .cajita .input {
     display: flex;
@@ -444,28 +456,44 @@ main .contenedor-misproyectos{
     height: 30px;
 }
 
-
-
-
 .contenedor-contactame{
-    height: 300px;
+    padding: 30px;
+    width: 90%;
 }
-.contenedor-contactame #contactame{
-    font-size: 35px;
-    padding-top: 30px;
-    color: rgb(128, 0, 128);
-    text-decoration:underline;
+.contenedor-contactame .contenedor-contacto {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
 }
-.contenedor-contactame .contenedor-contacto{
-    justify-content: center;
-    align-items: center;
+.contenedor-contactame .contenedor-contacto h3{
+    font-size: 30px;
+    text-align: center;
+    /* no se porque no funciona */
+
 }
-.contenedor-contactame .contenedor-contacto .contenido-contacto{
-    width: 40% ;
-    height: 40%;
+.contenedor-contacto a{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 120px;
+    height: 60px;
+    padding: 20px;
 }
 
-
+.contenedor-contactame .contenedor-contacto .contenido-contacto {
+    width: 50px;
+    height: 50px;
+    padding: auto auto;
+    margin: 0 40px 0 10px;
+}
+.contenedor-contactame .contenedor-contacto p{
+    padding: auto auto;
+    font-size: 15px;
+    margin: 10px;
+}
 
 
 footer nav{
