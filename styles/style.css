@@ -390,7 +390,7 @@ body .nav{
 }
 .mihero .imagen-hero{
     width: 50%;
-    height: 400px;
+    height: 350px;
 }
 .mihero .contenedor-sobremi{
     width: 40%;
@@ -441,7 +441,7 @@ main .contenedor-conocimientos .contenedor-cards .contenido-card-conocimiento{
 
 }
 main .contenedor-misproyectos{
-    height: 1000px;
+    height: fit-content;
 }
 
 .contenedor-misproyectos .misproyectos-cards .proyecto{
@@ -586,7 +586,7 @@ footer nav{
 }
 
 main{
-    height: 1100px;
+    height: fit-content;
 }
 
 main contenedor-conocimientos{
@@ -601,18 +601,22 @@ main .contenedor-conocimientos .contenedor-cards .contenido-card-conocimiento{
 }
 
 main .contenedor-misproyectos{
-    padding: 0 40px;
+    padding: 10px 40px 10px 50px;
 }
 .contenedor-misproyectos .misproyectos-cards{
     justify-content: center;
 }
 .contenedor-misproyectos .misproyectos-cards .proyecto{
-    width: 18%;
+    width: 22%;
     margin: 0 50px;
 }
 .contenedor-misproyectos .misproyectos-cards .proyecto p{
-    width: 200px;
-    margin: 0 20px;
+    width: 190px;
+    margin: 0 20px 0 10px; 
+}
+.contenedor-misproyectos .misproyectos-cards .proyecto .card-img{
+ width: 200px;
+ height: 200px;
 }
 
 .contenedor-input .cajita .input {
