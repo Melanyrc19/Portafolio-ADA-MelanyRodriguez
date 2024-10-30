@@ -336,7 +336,7 @@ footer{
 }
 footer nav{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     color: white;
 }
 footer nav .enlaces a{
