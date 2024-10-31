@@ -1,4 +1,16 @@
-@import url(./home.css);
+:root {
+    --colorUno:rgba(111, 205, 147, 0.789);;
+    --colorDos: rgba(255, 200, 0, 0.247);
+    --colorTres: rgba(249, 230, 17, 0.515);
+    --colorCuatro: rgba(255, 200, 0, 0.381);
+    --colorCinco:rgba(218, 212, 234, 0.82);
+    --colorSeis:  blueviolet;
+    --colorSiete: rgb(222, 201, 240);
+    --colorOcho: rgb(211, 214, 243);
+    --colorNueve: rgba(250, 235, 215, 0.822);
+    --fontDos: "Sacramento";
+    --fontTres: "Comic Neue";
+}
 
 html{
     scroll-behavior: smooth;
