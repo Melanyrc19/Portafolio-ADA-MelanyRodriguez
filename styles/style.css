@@ -11,7 +11,6 @@
     --fontDos: "Sacramento";
     --fontTres: "Comic Neue";
 }
-
 html{
     scroll-behavior: smooth;
 }
@@ -31,7 +30,6 @@ nav {
     font-weight: 700;
     background-color: var(--colorUno);
 }
-
 .nav a {
     display: none;
 }
@@ -51,23 +49,19 @@ nav {
     
     background-color: rgba(23, 48, 146, 0.267);
 }
-
 .mihero{
     height: fit-content;
 }
 
 .mihero .contenedor-mihero {
     text-align: center;
-
 }
-
 .mihero .contenedor-mihero h3 {
     height: 10px;
     font-family: var(--fontDos);
     font-weight: 600;
     font-size: 20px;
 }
-
 .mihero .contenedor-mihero p {
     height: 8px;
     margin-bottom: 25px;
@@ -75,7 +69,6 @@ nav {
     font-weight: 400;
     font-size: 20px;
 }
-
 .mihero .imagen-hero {
     display: flex;
     justify-content: center;
@@ -85,32 +78,30 @@ nav {
     width: 240px;
     height: 300px;
 }
-
 .mihero .contenedor-sobremi {
     background-color: var(--colorDos);
     text-align: start;
     height: fit-content;
     padding:30px 30px;
+    margin: auto auto;
 }
-
 .mihero .contenedor-sobremi h4 {
     padding-top: 10px;
     text-align: start;
     font-family: var(--fontTres);
     text-decoration: underline;
 }
-
 .mihero .contenedor-sobremi p {
     font-family: var(--fontTres);
+    width: 90%;
 }
-
 .mihero .contenedor-sobremi #button {
     text-align: start;
     position: relative;
     width: 100px;
     height: 40px;
+    padding: 5px;
 }
-
 .mihero .contenedor-sobremi button {
     width: 100%;
     height: 100%;
@@ -135,9 +126,7 @@ nav {
     display: inline-block;
     background-color: rgb(211, 214, 243);
     width: 100%;
-    height: 100%;
-
-    
+    height: 100%; 
 }
 .mihero .contenedor-sobremi button:hover {
     cursor:pointer;
@@ -147,13 +136,11 @@ nav {
     text-decoration: none;
     color: black;
 }
-
 main {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
-
 main .contenedor-conocimientos {
     background-color: rgb(255, 255, 255);
     color: rgb(246, 238, 238);
@@ -187,21 +174,18 @@ main .contenido-card-conocimiento {
     margin: 10px 20px;
     box-shadow: 4px 3px 6px rgb(71, 69, 69);
 }
-
 main .contenedor-misproyectos {
     text-align: center;
     background-color: var(--colorDos);
     height: fit-content;
     padding: 15px;
 }
-
 main .contenedor-misproyectos h3 {
     font-size: 30px;
     font-weight: 500;
     color:  blueviolet;
     font-family: var(--fontTres);
 }
-
 main .misproyectos-cards {
     display: flex;
     flex-wrap: wrap;
@@ -209,7 +193,6 @@ main .misproyectos-cards {
     align-items: center;
     margin: 30px 0 30px 0;
 }
-
 main .misproyectos-cards .proyecto {
     width: 200px;
     margin: 20px 0 20px ;
@@ -228,21 +211,17 @@ main .misproyectos-cards .proyecto p {
     text-decoration: underline;
     font-family: var(--fontTres);
 }
-
 main .misproyectos-cards .proyecto .card-img{
     width: 90%;
     height: 90%; 
     box-shadow: 5px 5px 8px gray;
 }
-
-
 main .misproyectos-cards a {
     text-decoration: none;
     color: black;
     width: 100%;
     height: 100%;
 }
-
 .contenedor-contactame {
     height: fit-content;
     text-align: center;
@@ -256,8 +235,8 @@ main .misproyectos-cards a {
     font-family: var(--fontTres);
     text-decoration:underline;
     margin: 0;
+    text-align: start;
 }
-
 .contenedor-contactame .contenedor-contacto {
     width: 100%;
     height: 220px;
@@ -274,7 +253,6 @@ main .misproyectos-cards a {
     width: 200px;
     height: 200px;
 }
-
 .contenedor-contactame .contenedor-contacto .contenido-contacto {
     width: 40px;
     height: 40px;
@@ -313,7 +291,6 @@ main .misproyectos-cards a {
     background-color: var(--colorCinco);
     font-family: var(--fontTres);
 }
-
 .contenedor-input .cajita .input {
     display: flex;
     flex-direction: column;
@@ -321,12 +298,15 @@ main .misproyectos-cards a {
     align-items: start;
     padding: 10px;
 }
-
 .contenedor-input .cajita .input .contenido-input {
     margin-top: 5px;
     width: 200px;
     border: none;
     border-radius: 5px;
+    transition: background-color 0.03 ease;
+}
+.contenido-input:focus{
+    background-color: var(--colorCuatro);
 }
 .input textarea{
     height: 80px;
@@ -348,13 +328,14 @@ main .misproyectos-cards a {
 
 footer{
     width: 100%;
-    height: 40px;
     background-color: var(--colorUno);
 }
 footer nav{
     display: flex;
     flex-direction: column-reverse;
     color: white;
+    background-color: var(--colorUno);
+    height: 60px;
 }
 footer nav .enlaces a{
   display: none;
@@ -375,11 +356,9 @@ header .nav a {
     color: white;
     font-family: var(--fontTres);
 }
-
 .nav .emogi{
     display: none;
 }
-
 .mihero{
     display: flex;
     flex-wrap: wrap;
@@ -456,7 +435,6 @@ main .contenedor-cards{
     margin: auto;
     justify-content: center;
 }
-
 main .contenedor-conocimientos .contenedor-cards .contenido-card-conocimiento{
     width: 15%;
     height: 15%;
@@ -471,13 +449,10 @@ main .contenedor-misproyectos{
 main .contenedor-misproyectos h3{
     margin: 0;
 }
-
 main .contenedor-misproyectos .misproyectos-cards{
     width: 70%;
     margin: auto;
 }
-
-
 .contenedor-misproyectos .misproyectos-cards .proyecto{
     width: 30%;
     height: 100%;
@@ -487,14 +462,12 @@ main .contenedor-misproyectos .misproyectos-cards{
     width: 100%;
     height: 100%;
 }
-
 .contenedor-misproyectos .misproyectos-cards .proyecto .card-img{
     width: 150px;
     height: 150px;
     transition: all ease-in-out 0.4s;
     box-shadow: 5px 5px 8px gray;
 }
-
 main .misproyectos-cards .card-img:hover{
 transform: scale(1.1);
 }
@@ -507,11 +480,9 @@ main .misproyectos-cards .proyecto p {
     text-decoration: underline;
     font-family: var(--fontTres);
 }
-
 .contenedor-input .cajita{
     width: fit-content;
 }
-
 .contenedor-input .cajita .input {
     display: flex;
     flex-direction: column;
@@ -519,7 +490,6 @@ main .misproyectos-cards .proyecto p {
     align-items: start;
     padding: 10px;
 }
-
 .contenedor-input .cajita .input .contenido-input {
     margin-top: 10px;
     width: 350px;
@@ -529,7 +499,6 @@ main .misproyectos-cards .proyecto p {
 .tamaño-input{
     height: 30px;
 }
-
 .contenedor-contactame{
     padding: 30px;
     width: 90%;
@@ -554,7 +523,6 @@ main .misproyectos-cards .proyecto p {
     height: 60px;
     padding: 20px;
 }
-
 .contenedor-contactame .contenedor-contacto .contenido-contacto {
     width: 50px;
     height: 50px;
@@ -566,24 +534,28 @@ main .misproyectos-cards .proyecto p {
     font-size: 15px;
     margin: 10px;
 }
-
 footer nav{
-    height: 80px;
+    height: 120px;
+}
+footer nav p{
+    margin-bottom: 25px;
 }
 footer nav .enlaces a{
     display: block;
     text-decoration: none;
     color: white;
     padding: 10px;
+    
 }
 footer nav .enlaces{
     font-size: 10px;
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-top: 25px;
+    
 
 }
-
 }
 @media (min-width:1024px) {
 .nav{
@@ -591,7 +563,6 @@ footer nav .enlaces{
     z-index: 9999;
     height: 20px;
 }
-
 .mihero{
     width: 80%;
     margin: auto auto;
@@ -608,8 +579,6 @@ footer nav .enlaces{
     width: 35%;
     padding-left: 13%; 
 }
-
-
 .mihero .contenedor-sobremi{
     width: 35%;
     height: fit-content;
@@ -617,8 +586,6 @@ footer nav .enlaces{
     margin: auto auto;
     padding: auto auto;
     border-radius: 25px;
-
-
 }
 .mihero .contenedor-sobremi h4{
     width: 80%;
@@ -635,22 +602,18 @@ footer nav .enlaces{
 .mihero .contenedor-sobremi #button{
     margin: 30px 0 10px 0;
 }
-
 main{
     height: fit-content;
 }
-
 main contenedor-conocimientos{
     height: 100px;   
     padding-top: 40px;
 }
-
 main .contenedor-conocimientos .contenedor-cards .contenido-card-conocimiento{
     width: 70px;
     height: 70px;
     margin: 20px;
 }
-
 main .contenedor-misproyectos{
     padding: 20px 0px 30px 0px;
     height: fit-content;
@@ -670,7 +633,6 @@ main .contenedor-misproyectos{
  width: 150px;
  height: 150px;
 }
-
 .contenedor-input .cajita .input {
     display: flex;
     flex-direction: column;
@@ -678,7 +640,6 @@ main .contenedor-misproyectos{
     align-items: start;
     padding: 10px;
 }
-
 .contenedor-input .cajita .input .contenido-input {
     margin-top: 10px;
     width: 350px;
@@ -688,15 +649,12 @@ main .contenedor-misproyectos{
 .tamaño-input{
     height: 30px;
 }
-
-
 .contenedor-input .cajita .input {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: start;
 }
-
 .contenedor-input .cajita .input .contenido-input {
     margin-top: 10px;
     width: 380px;
