@@ -65,7 +65,12 @@ nav {
 }
 
 .mihero .imagen-hero {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mihero .imagen-hero img{
+    width: 240px;
     height: 300px;
 }
 
